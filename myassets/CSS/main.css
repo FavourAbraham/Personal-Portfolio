@@ -1268,23 +1268,3 @@ section,
 /*--------------------------------------------------------------
 # More CSS stylings
 --------------------------------------------------------------*/
-/* Ensure the two sections appear side by side on wider screens */
-.resume .row {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping if content is too wide */
-  gap: 20px; /* Add spacing between columns */
-}
-
-.resume .col-lg-6 {
-  flex: 1; /* Take up equal width */
-  max-width: 50%; /* Ensure it doesn't exceed half the container */
-  padding: 10px; /* Add some padding */
-  box-sizing: border-box; /* Prevent padding from affecting width */
-}
-
-/* Make sections stack vertically on smaller screens */
-@media (max-width: 768px) {
-  .resume .col-lg-6 {
-    max-width: 100%; /* Full width for smaller screens */
-  }
-}
