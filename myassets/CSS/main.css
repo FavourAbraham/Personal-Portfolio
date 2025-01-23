@@ -7,7 +7,7 @@ My Main CSS file
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* colors */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
@@ -17,7 +17,7 @@ My Main CSS file
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav menu colors */
 :root {
   --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
@@ -1268,25 +1268,23 @@ section,
 /*--------------------------------------------------------------
 # More CSS stylings
 --------------------------------------------------------------*/
-#resume .container .row {
+/* Ensure the two sections appear side by side on wider screens */
+.resume .row {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
+  flex-wrap: wrap; /* Allows wrapping if content is too wide */
+  gap: 20px; /* Add spacing between columns */
 }
 
-#resume .col-lg-6 {
-  flex: 0 0 48%; 
-  max-width: 48%;
-  box-sizing: border-box; 
+.resume .col-lg-6 {
+  flex: 1; /* Take up equal width */
+  max-width: 50%; /* Ensure it doesn't exceed half the container */
+  padding: 10px; /* Add some padding */
+  box-sizing: border-box; /* Prevent padding from affecting width */
 }
 
-@media (max-width: 992px) {
-  #resume .col-lg-6 {
-    flex: 0 0 100%;
-    max-width: 100%; 
+/* Make sections stack vertically on smaller screens */
+@media (max-width: 768px) {
+  .resume .col-lg-6 {
+    max-width: 100%; /* Full width for smaller screens */
   }
-}#resume {
-  max-width: 1200px;
-  margin: 0 auto; 
-  padding: 0 20px; 
 }
