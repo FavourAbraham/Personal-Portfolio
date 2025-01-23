@@ -219,3 +219,13 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+/** Agreement page */
+function proceedToLogin() {
+  const checkbox = document.getElementById("agree");
+  if (checkbox.checked) {
+    window.location.href = "login.html"; // Redirect to login page
+  } else {
+    alert("Please agree to the policy and rules before proceeding.");
+  }
+}

@@ -1,0 +1,89 @@
+/** Agreement page **/
+
+.content {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }
+  .rules {
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .proceed-btn {
+    background-color: #ffff; /* White button */
+    color: #000;           /* Black text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .proceed-btn:hover {
+    background-color: #ccc; /* Light gray on hover */
+  }
+  
+  .arrow {
+    margin-left: 10px;
+  }
+  
+  .checkbox {
+    margin-top: 10px;
+  }
+/* Default checkbox style */
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black; /* Black border */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  border-radius: 4px; /* Optional: rounded corners */
+  position: relative; /* Required for positioning the pseudo-element */
+}
+
+/* Checkbox style when checked */
+.checkbox input[type="checkbox"]:checked {
+  background-color: white; /* White background when checked */
+  border: 2px solid black; /* Black border when checked */
+}
+
+/* Checkmark using a pseudo-element */
+.checkbox input[type="checkbox"]:checked::after {
+  content: '✔'; /* Unicode checkmark */
+  color: black; /* Black checkmark */
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the checkmark */
+}
+
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+  }
