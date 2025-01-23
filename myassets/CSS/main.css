@@ -1268,3 +1268,21 @@ section,
 /*--------------------------------------------------------------
 # More CSS stylings
 --------------------------------------------------------------*/
+#resume .container .row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+#resume .col-lg-6 {
+  flex: 0 0 48%; 
+  max-width: 48%;
+  box-sizing: border-box; 
+}
+
+@media (max-width: 992px) {
+  #resume .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%; /* Columns stack on smaller screens */
+  }
+}
