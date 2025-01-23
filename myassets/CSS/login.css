@@ -1,0 +1,82 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(120deg, #000, #444);
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  /* Login Container */
+  .login-container {
+    background: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Form Title */
+  .login-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Input Fields */
+  .form-control {
+    background: #444;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-control:focus {
+    background: #555;
+    border-color: #00bcd4;
+    box-shadow: 0 0 5px #00bcd4;
+    color: #fff;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    width: 100%;
+    background: #00bcd4;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    background: #0097a7;
+  }
+  
+  .login-btn:active {
+    background: #00796b;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
