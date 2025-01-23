@@ -229,3 +229,38 @@ function proceedToLogin() {
     alert("Please agree to the policy and rules before proceeding.");
   }
 }
+
+/* Backend */
+
+const form = document.getElementById('loginForm');
+const message = document.getElementById('message');
+
+form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    try {
+        const response = await fetch('http://localhost:5000/login', { // Replace with your backend URL
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password }),
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            message.style.color = 'green';
+            message.textContent = 'Login successful!';
+        } else {
+            message.style.color = 'red';
+            message.textContent = 'Invalid credentials!';
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        message.style.color = 'red';
+        message.textContent = 'An error occurred. Please try again later.';
+    }
+});
+
