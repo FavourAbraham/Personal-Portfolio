@@ -391,7 +391,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-color: black transparent black transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -418,7 +418,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: black;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -432,7 +432,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, black, transparent 20%);
   color: var(--contrast-color);
 }
 
