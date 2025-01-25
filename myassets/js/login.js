@@ -20,7 +20,7 @@ form.addEventListener('submit', async (event) => {
             message.style.color = 'green';
             message.textContent = 'Login successful!';
             setTimeout(() => {
-                window.location.href = 'homepage.html'; // Redirect to dashboard or desired page
+                window.location.href = '/homepage.html'; // Redirect to dashboard or desired page
             }, 2000); // Delay for the success message
         } else {
             message.style.color = 'red';

@@ -1,14 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 
 const app = express();
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json()); // Use built-in JSON parser
 
-// login credentials
+// Login credentials
 const validCredentials = {
   username: 'adminUser',
   password: 'adminPass123',
@@ -16,6 +15,7 @@ const validCredentials = {
 
 // Login route
 app.post('/login', (req, res) => {
+  console.log('Request Body:', req.body); // Debugging
   const { username, password } = req.body;
 
   if (username === validCredentials.username && password === validCredentials.password) {
