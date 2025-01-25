@@ -4,11 +4,15 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-// Middleware
-app.use(cors());
-app.use(bodyParser.json());
+const corsOptions = {
+    origin: ['https://willowy-hotteok-10c634.netlify.app/'], // Replace with your Netlify URL
+    methods: ['POST', 'GET'],
+};
+app.use(cors(corsOptions));
 
-// Hardcoded login credentials
+
+
+// login credentials
 const validCredentials = {
   username: 'adminUser',
   password: 'adminPass123',
