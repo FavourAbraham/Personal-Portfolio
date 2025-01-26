@@ -40,7 +40,7 @@ Follow these steps to explore or customize the Digital CV project:
 ## 🌐 **Live Demo**
 
 Explore the live demo of my website at:
-[https://willowy-hotteok-10c634.netlify.app/](https://willowy-hotteok-10c634.netlify.app/)
+[https://favourabraham.netlify.app/](https://favourabraham.netlify.app/)
 
 ### User Journey:
 1. **Agreement Page:** The first page requires you to agree to my policy of use. If you disagree, an error message is raised.
@@ -82,15 +82,14 @@ This project is still in development. Planned features include:
 - Git & GitHub (for collaboration and version tracking)
 
 ### **Deployment:**
-- Hosted on Render for live previews
+- Hosted on Render and frontend on netlify
 
 ---
 
 ## 📂 **Project Structure**
 
 ```
-forms
-├── contact.php
+├Portfolio-frontend
 myassets
 ├── CSS
 │   ├── agree.css
@@ -116,6 +115,7 @@ myassets
 js
 ├── login.js
 ├── main.js
+├── email.js
 portfolio-backend
 ├── node_modules
 ├── .env
@@ -136,19 +136,19 @@ portfolio-backend
 
 ## 🎨 **Customization**
 
-Feel free to adapt the project to suit your needs:
+Feel free to adapt the project to suit your needs (Do not copy content):
 
 1. **Update Profile Information:**
    Modify the `about.html` file with your details.
 
 2. **Add Projects:**
-   Add project screenshots to the `img/portfolio/` folder and update the `portfolio-details.html` file.
+   Add project screenshots and update files.
 
 3. **Styling Changes:**
-   Edit `CSS/main.css` for layout and color scheme adjustments.
+   Edit `CSS/main.css` and the likes for layout and color scheme adjustments.
 
 4. **Interactive Elements:**
-   Customize JavaScript animations in the `js/main.js` file.
+   Customize JavaScript animations and the likes in the `js/main.js` file.
 
 ---
 
