@@ -4,14 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Pricing - Favour Abraham</title>
+  <title> Graphic Details - Favour Abraham</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+
+  <link rel="import" href="index.html">
+  <link rel="import" href="#about/index.html">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- CSS Files -->
   <link href="myassets/eternal_css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,9 +25,11 @@
 
   <!-- Main CSS File -->
   <link href="myassets/CSS/main.css" rel="stylesheet">
+
 </head>
 
 <body class="index-page">
+
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
@@ -32,7 +37,7 @@
       <img src="myassets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
-    <a href="homepage.html" class="logo d-flex align-items-center justify-content-center">
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">Favour Abraham</h1>
     </a>
 
@@ -45,135 +50,229 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="homepage.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="https://wa.me/2349128597331"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
+
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Pricing</h1>
+  
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="homepage.html">Home</a></li>
-            <li class="current">Pricing</li>
+            <li><a href="homepage.html">Home</a></li>            
+            <li class="current">Graphic designs</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card">
-              <div class="pricing-header">
-                <img src="myassets/img/pricing/flyer.jpg" alt="Flyer Design" class="img-fluid">
-                <h3>Flyer Design</h3>
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="myassets/img/portfolio/app-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="myassets/img/portfolio/books-1.jpg" alt="">
+                </div>
               </div>
-              <div class="pricing-body">
-                <p>Beautiful and engaging flyers for any purpose.</p>
-                <h4>&#8358;5,000</h4>
-              </div>
+              <div class="swiper-pagination"></div>
+              <div class="d-flex justify-content-center">
+              <a href="contact.html" class="btn btn-primary btn-sm">Contact</a>
+            </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card">
-              <div class="pricing-header">
-                <img src="myassets/img/pricing/banner.jpg" alt="Banner Design" class="img-fluid">
-                <h3>Banner Design</h3>
-              </div>
-              <div class="pricing-body">
-                <p>Custom banners for online and offline promotions.</p>
-                <h4>&#8358;8,000</h4>
-              </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Graphic Designsh3>
+              <ul>
+                <li><strong>Category</strong>: Graphics design</li>
+                <li><strong>Client</strong>: BLHCF UNI IBADAN</li>
+                <li><strong>Project date</strong>: 20 October, 2023 - Present</li>
+                <li><strong>Project URL</strong>: <a href="contact.html">visit site</a></li>
+                </ul>
             </div>
-          </div>
+            <section id="portfolio-details" class="portfolio-details section">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card">
-              <div class="pricing-header">
-                <img src="myassets/img/pricing/card.jpg" alt="Card Design" class="img-fluid">
-                <h3>Business Cards</h3>
-              </div>
-              <div class="pricing-body">
-                <p>Professional and sleek business card designs.</p>
-                <h4>&#8358;3,000</h4>
-              </div>
-            </div>
-          </div>
+              <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+                <div class="row gy-4">
+        
+                  <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper init-swiper">
+        
+                      <script type="application/json" class="swiper-config">
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 5000
+                          },
+                          "slidesPerView": "auto",
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          }
+                        }
+                      </script>
+        
+                      <div class="swiper-wrapper align-items-center">
+        
+                        <div class="swiper-slide">
+                          <img src="myassets/img/portfolio/app-1.jpg" alt="">
+                        </div>
+        
+                        <div class="swiper-slide">
+                          <img src="myassets/img/portfolio/books-1.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="d-flex justify-content-center">
+                      <a href="contact.html" class="btn btn-primary btn-sm">Contact</a>
+                    </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4">
+                    <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                      <h3>Graphic Designs</h3>
+                      <ul>
+                        <li><strong>Category</strong>: Graphics design</li>
+                        <li><strong>Client</strong>: All (Brand Owner, Content Creator, Small business, Schools, Advert and the likes...)</li>
+                        <li><strong>Status</strong>: Active</li>
+                        <li><strong>Submit Contact Form</strong>: <a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <section id="portfolio-details" class="portfolio-details section">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card">
-              <div class="pricing-header">
-                <img src="myassets/img/pricing/logo.jpg" alt="Logo Design" class="img-fluid">
-                <h3>Logo Design</h3>
-              </div>
-              <div class="pricing-body">
-                <p>Creative logos to represent your brand identity.</p>
-                <h4>&#8358;15,000</h4>
-              </div>
-            </div>
+                      <div class="container" data-aos="fade-up" data-aos-delay="100">
+                
+                        <div class="row gy-4">
+                
+                          <div class="col-lg-8">
+                            <div class="portfolio-details-slider swiper init-swiper">
+                
+                              <script type="application/json" class="swiper-config">
+                                {
+                                  "loop": true,
+                                  "speed": 600,
+                                  "autoplay": {
+                                    "delay": 5000
+                                  },
+                                  "slidesPerView": "auto",
+                                  "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                  }
+                                }
+                              </script>
+                
+                              <div class="swiper-wrapper align-items-center">
+                
+                                <div class="swiper-slide">
+                                  <img src="myassets/img/portfolio/app-1.jpg" alt="">
+                                </div>
+                
+                                <div class="swiper-slide">
+                                  <img src="myassets/img/portfolio/books-1.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                              <div class="d-flex justify-content-center">
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="col-lg-4">
+                            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                              <h3>My books</h3>
+                              <ul>
+                                <li><strong>Category</strong>: My Books</li>
+                                <li><strong>Author</strong>: Favour O. Abraham</li>
+                                <li><strong>Status</strong>: Available</li>
+                                <li><strong>Download</strong>: <a href="https://selar.co/SELL_IT_OUT">visit site</a></li>
+                                </ul>
+                            </div>
+            
           </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card">
-              <div class="pricing-header">
-                <img src="myassets/img/pricing/social.jpg" alt="Social Media Design" class="img-fluid">
-                <h3>Social Media Design</h3>
-              </div>
-              <div class="pricing-body">
-                <p>Engaging designs for your social media platforms.</p>
-                <h4>&#8358;10,000</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card">
-              <div class="pricing-header">
-                <img src="myassets/img/portfolio/books-1.jpg" alt="Book Cover Design" class="img-fluid">
-                <h3>Book Cover Design</h3>
-              </div>
-              <div class="pricing-body">
-                <p>Attractive and professional book cover designs.</p>
-                <h4>&#8358;12,000</h4>
-              </div>
-            </div>
-          </div>
-
+          
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
-  </main>
 
+    </section><!-- /Portfolio Details Section -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15777.123456789!2d3.895247!3d7.448887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d3e1a1a1a1a%3A0x1a2b3c4d5e6f7g8h!2sOjoo%2C%20Ibadan%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1676961268712!5m2!1sen!2sng" frameborder="0" style="border:0; width: 100%; height: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </main>
   <footer id="footer" class="footer position-relative light-background">
+
     <div class="container">
-      <div class="copyright text-center">
+      <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Favour Abraham</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
         Designed by <a href="homepage.html">Favour Abraham</a>
       </div>
     </div>
+
   </footer>
 
-  <!-- Scroll Top -->
+  <!-- Scroll Top --> 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- eternal_css JS Files -->
   <script src="myassets/eternal_css/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="myassets/eternal_css/php-email-form/validate.js"></script>
   <script src="myassets/eternal_css/aos/aos.js"></script>
+  <script src="myassets/eternal_css/typed.js/typed.umd.js"></script>
+  <script src="myassets/eternal_css/purecounter/purecounter_vanilla.js"></script>
+  <script src="myassets/eternal_css/waypoints/noframework.waypoints.js"></script>
   <script src="myassets/eternal_css/glightbox/js/glightbox.min.js"></script>
+  <script src="myassets/eternal_css/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="myassets/eternal_css/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="myassets/eternal_css/swiper/swiper-bundle.min.js"></script>
-  <script src="myassets/JS/main.js"></script>
+
+  <!-- Main JS File -->
+  <script src="myassets/js/main.js"></script>
+
 </body>
 
 </html>
