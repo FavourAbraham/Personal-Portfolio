@@ -1,6 +1,6 @@
 function php_email_form_submit(thisForm, action, formData) {
     const serviceID = 'service_4nyoj7o'; // EmailJS Service ID
-    const templateID = 'template_xclejpe'; // EmailJS Template ID
+    const templateID = 'template_uk4pb9z'; // EmailJS Template ID
     const publicKey = 'Q8uUkQza6Ao7H30Dc'; // EmailJS Public Key
   
     // Convert FormData to an object
