@@ -11,7 +11,7 @@ Welcome to my **Digital CV**, a comprehensive and visually stunning web-based po
 - **Professional Overview:** Highlights my skills, experiences, and educational background.
 - **Dynamic Navigation:** Intuitive menu for seamless browsing across different sections.
 - **Portfolio Gallery:** Displays projects in web development, graphic design, and other fields.
-- **Contact Form:** Simple and secure way to reach out to me directly.
+- **Contact Form:** Simple and secure way to reach out to me directly using the **EmailJs**
 - **Responsive Design:** Optimized for all screen sizes, ensuring accessibility on any device.
 - **Interactive Animations:** Smooth transitions and dynamic effects for a polished look.
 - **Authentication System:** Secure login for exclusive access to additional resources (like my full CV).
@@ -72,6 +72,7 @@ This project is still in development. Planned features include:
 - JavaScript (for interactivity)
 - Typed.js (for animated text effects)
 - Swiper.js (for responsive sliders)
+- Emailjs (for responsive contact form submission)
 
 ### **Backend:**
 - Node.js (for server-side logic)
