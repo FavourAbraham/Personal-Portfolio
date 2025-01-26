@@ -90,7 +90,11 @@ This project is still in development. Planned features include:
 
 ```
 ├Portfolio-frontend
-myassets
+├── graphic-pricing.html
+├── homepage.html
+├── index.html
+├── login.html
+├──myassets
 ├── CSS
 │   ├── agree.css
 │   ├── login.css
@@ -102,7 +106,6 @@ myassets
 │   ├── glightbox
 │   ├── imagesloaded
 │   ├── isotope-layout
-│   ├── php-email-form
 │   ├── purecounter
 │   ├── swiper
 │   ├── typed.js
@@ -124,12 +127,9 @@ portfolio-backend
 ├── package-lock.json
 ├── package.json
 ├── README.md
-├── ebook-page.html
-├── graphic-pricing.html
-├── homepage.html
-├── index.html
-├── login.html
-└── portfolio-details.html
+├── Author
+
+
 ```
 
 ---
